@@ -6,9 +6,11 @@ namespace SnakeLadderGame
     {
         static void Main(string[] args)
         {
-            // single player starting with zero position 
-            int playerPos = 0;
-            Console.WriteLine(" At starting of the  Game  the position of player is at {0}",playerPos);
+            Random random = new Random();
+            int playerPos = 0; //diceRoll;
+           int diceRoll = random.Next(1, 7);
+            Console.WriteLine("value of dice Roll is {0}", diceRoll);
+          
         }
     }
 }

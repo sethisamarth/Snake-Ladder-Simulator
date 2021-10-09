@@ -10,6 +10,7 @@ namespace SnakeLadderGame
         {
             Random random = new Random();
             int playerPos = 0;
+            int totalTimesDiceRoll = 0;
 
             // running while loop till the player reaches at 100
 
@@ -49,8 +50,9 @@ namespace SnakeLadderGame
                 }
 
                 Console.WriteLine("The player postion is : {0}", playerPos);
+                totalTimesDiceRoll++;
             }
-            
+            Console.WriteLine("Total no.  of times dice rolled is {0}", totalTimesDiceRoll);
         }
     }
 }

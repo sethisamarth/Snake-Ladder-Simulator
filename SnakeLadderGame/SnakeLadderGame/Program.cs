@@ -20,7 +20,7 @@ namespace SnakeLadderGame
                 int diceRoll = random.Next(1, 7);
                 Console.WriteLine("value of dice Roll is {0}", diceRoll);
 
-                
+
                 // Checking for a option 
                 var list = new List<string> { "NoPlay", "Ladder", "Snake" };
                 Console.WriteLine("options we have 0.Noplay,1.Ladder,2.snake");
@@ -49,18 +49,12 @@ namespace SnakeLadderGame
 
                 }
 
-                if ((playerPos + diceRoll) > 100)
-                {
-                    continue;
-                }
-                else
-                {
-                    playerPos = playerPos + diceRoll;
-                    Console.WriteLine("The player postion is : {0}", playerPos);
-                    totalTimesDiceRoll++;
-                }
+                Console.WriteLine("The player postion is : {0}", playerPos);
+                totalTimesDiceRoll++;
             }
             Console.WriteLine("Total no.  of times dice rolled is {0}", totalTimesDiceRoll);
+
         }
     }
 }
+                   

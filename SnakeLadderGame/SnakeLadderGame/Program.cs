@@ -49,8 +49,16 @@ namespace SnakeLadderGame
 
                 }
 
-                Console.WriteLine("The player postion is : {0}", playerPos);
-                totalTimesDiceRoll++;
+                if ((playerPos + diceRoll) > 100)
+                {
+                    continue;
+                }
+                else
+                {
+                    playerPos = playerPos + diceRoll;
+                    Console.WriteLine("The player postion is : {0}", playerPos);
+                    totalTimesDiceRoll++;
+                }
             }
             Console.WriteLine("Total no.  of times dice rolled is {0}", totalTimesDiceRoll);
         }
